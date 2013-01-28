@@ -1,20 +1,15 @@
 === Plugin Name ===
 Contributors: pgogy
-Tags: comic book, comic, kapow
+Tags: interaction, timed, post, release
 Requires at least: 3.0.0
 Tested up to: 3.5
 Stable tag: 0.1
 
-Allows a user to add comic book like exclamations to their posts.
+Allows a user to release parts of a post at various times.
 
 == Description ==
 
-Allows a user to add comic book like exclamations to their posts. This shortcode allows colors, size and words to be specified before inserted into the post.
-
-A simple editor window allows you to use drop down selectors to do this.
-
-Komikah font used in this plugin by Larry Yerkes http://wolfbainx.deviantart.com/
-JS Color is © 2008-2012 Jan Odvárko - licensed as LGPL
+Allows a user to release parts of a post at various times.
 
 == Installation ==
 
@@ -32,8 +27,6 @@ e.g.
 
 == Screenshots ==
 
-1. Editor Window
-2. Shortcodes at work in a blog post	
 
 == Frequently Asked Questions ==
 
