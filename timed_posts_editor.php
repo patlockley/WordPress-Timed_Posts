@@ -82,4 +82,3 @@ function timed_posts_editor(){
 }
 
 ?>
-	
