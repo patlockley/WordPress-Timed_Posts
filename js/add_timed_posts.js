@@ -17,14 +17,10 @@ function add_timed_posts(){
 	
 	if(document.getElementById("start_enable").checked||document.getElementById("end_enable").checked){
 
-		html_exist = jQuery("#content_ifr").contents().find("body").html();
-		
-		html_exist += "[timed_post " + start_output + 
+		document.getElementById("content").innerHTML += "[timed_post " + start_output + 
 																						" " + end_output + 
 																						" timed_post_id='" + document.getElementById("timed_posts_post_id").value + 
 																						"']";
-		jQuery("#content_ifr").contents().find("body").html(html_exist);
-		
 	}else{
 	
 		alert("Timed post cannot be added when both boxes are checked.");
