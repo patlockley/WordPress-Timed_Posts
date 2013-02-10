@@ -2,29 +2,13 @@
 
 add_action("admin_menu", "timed_posts_editor_make");
 
-add_action( 'admin_enqueue_scripts', 'timed_posts_editor_javascript' );
-
 function custom_colors() {
 	echo "<link rel='stylesheet' id='thickbox-css'  href='" . plugins_url('/css/anytime.css', __FILE__) . "' type='text/css' media='all' />";
-	echo "<script type='text/javascript' src='" . plugins_url('/js/jquery-1.9.0.js', __FILE__) . "'></script>";
-	echo "<script type='text/javascript' src='" . plugins_url('/js/jquery-migrate-1.0.0.js', __FILE__) . "'></script>";
 	echo "<script type='text/javascript' src='" . plugins_url('/js/anytimec.js', __FILE__) . "'></script>";
 	echo "<script type='text/javascript' src='" . plugins_url('/js/add_timed_posts.js', __FILE__) . "'></script>";
 }
 
 add_action('admin_head', 'custom_colors');
-
-function timed_posts_editor_javascript($hook) {
-
-	global $post;
-	
-	if( 'post.php' != $hook )
-			return;
-		
-	
-	
-	
-}
 
 function timed_posts_editor_make(){
 
@@ -47,7 +31,7 @@ function timed_posts_editor(){
 
 	AnyTime.picker( "start1",
     { format: "%z-%m-%d", firstDOW: 1 } );
-  $("#start2").AnyTime_picker(
+  jQuery("#start2").AnyTime_picker(
     { format: "%H:%i:%s" } );
 	
 	</script>
@@ -58,7 +42,7 @@ function timed_posts_editor(){
 
 	AnyTime.picker( "end1",
     { format: "%z-%m-%d", firstDOW: 1 } );
-  $("#end2").AnyTime_picker(
+  jQuery("#end2").AnyTime_picker(
     { format: "%H:%i:%s" } );
 	
 	</script>
@@ -82,4 +66,3 @@ function timed_posts_editor(){
 }
 
 ?>
-	
