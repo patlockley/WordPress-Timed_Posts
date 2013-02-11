@@ -17,7 +17,7 @@ function add_timed_posts(){
 	
 	if(document.getElementById("start_enable").checked||document.getElementById("end_enable").checked){
 
-		document.getElementById("content").innerHTML += "[timed_post " + start_output + 
+		document.getElementById("shortcode_display").value =  "[timed_post " + start_output + 
 																						" " + end_output + 
 																						" timed_post_id='" + document.getElementById("timed_posts_post_id").value + 
 																						"']";

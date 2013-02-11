@@ -2,13 +2,17 @@
 
 add_action("admin_menu", "timed_posts_editor_make");
 
-function custom_colors() {
-	echo "<link rel='stylesheet' id='thickbox-css'  href='" . plugins_url('/css/anytime.css', __FILE__) . "' type='text/css' media='all' />";
-	echo "<script type='text/javascript' src='" . plugins_url('/js/anytimec.js', __FILE__) . "'></script>";
-	echo "<script type='text/javascript' src='" . plugins_url('/js/add_timed_posts.js', __FILE__) . "'></script>";
+add_action('admin_enqueue_scripts', 'display_css_javascript' );
+	
+function display_css_javascript() {
+	
+	wp_register_style( 'thickbox_css', plugins_url('/css/anytime.css', __FILE__) );
+	wp_enqueue_style( 'thickbox_css' );
+		
+	wp_enqueue_script( 'anytimec', plugins_url('/js/anytimec.js', __FILE__));		
+	wp_enqueue_script( 'timed_posts', plugins_url('/js/add_timed_posts.js', __FILE__));	
+	
 }
-
-add_action('admin_head', 'custom_colors');
 
 function timed_posts_editor_make(){
 
@@ -61,7 +65,9 @@ function timed_posts_editor(){
 	}
 	
 	echo "</select>";
-	?><p><span onclick="javascript:add_timed_posts()" style="font-weight:bold; cursor:hand; cursor:pointer; background:#fff; border:1px solid black; padding:10px;">Add Timed Post</span></p><?PHP
+	?>
+	<p>Shortcode <input id="shortcode_display" type="text" style="width:100%" /></p>
+	<p><span onclick="javascript:add_timed_posts()" style="font-weight:bold; cursor:hand; cursor:pointer; background:#fff; border:1px solid black; padding:10px;">Add Timed Post</span></p><?PHP
 	
 }
 
