@@ -6,6 +6,7 @@
 	Version: 0.1
 	Author: pgogy
 	Author URI: http://www.pgogy.com
+	Plugin URI: http://www.pgogy.com/code/groups/wordpress/timed-posts/
 	License: GPL (for PHP)	
 	*/
 

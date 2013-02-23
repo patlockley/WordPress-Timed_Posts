@@ -1,42 +1,34 @@
 === Plugin Name ===
 Contributors: pgogy
-Tags: comic book, comic, kapow
-Requires at least: 3.0.0
+Tags: time, timed, schedule, release
+Requires at least: 3.1
 Tested up to: 3.5
 Stable tag: 0.1
 
-Allows a user to add comic book like exclamations to their posts.
+Timed posts allows you to release parts of a post at different times.
 
 == Description ==
 
-Allows a user to add comic book like exclamations to their posts. This shortcode allows colors, size and words to be specified before inserted into the post.
+Timed Posts allows a blog post to include multiple sections which will only appear at certain times.
 
-A simple editor window allows you to use drop down selectors to do this.
+For support please see http://www.pgogy.com and http://www.pgogy.com/code/groups/wordpress/timed-posts/
 
-Komikah font used in this plugin by Larry Yerkes http://wolfbainx.deviantart.com/
-JS Color is © 2008-2012 Jan Odvárko - licensed as LGPL
+[vimeo https://vimeo.com/60042537]
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload the contents of the zip (including the folder) to the `/wp-content/plugins/` directory
+1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Visit the settings page for the plugin - No other configuration is required.
-
-== Changelog ==
-
-* This is the first version we have distributed - no changes have been made post this initial release as of yet.
-
-== Screenshots ==
-
-1. Editor Window
-2. Shortcodes at work in a blog post	
 
 == Frequently Asked Questions ==
 
-We are a new plugin - so no questions so far.
+No Questions have been asked yet. Please see http://www.pgogy.com/code/xerte-online/
 
-== Upgrade Notice ==
+== Screenshots ==
+
+1. Timed Post Editor
+
+== Changelog ==
+
+= 0.1 =
+First version released. Still a development version. I expect it to work, but problems may occur. 
